@@ -1,0 +1,75 @@
+/* Selector {
+    propiedad: valor;
+    propiedad: valor;
+ } */
+
+
+
+ h2{ /* selector globar. Estoy apuntando a todos los h2*/
+    color: red;
+    font-size: 45px;
+    background-color: aquamarine;
+    text-align: center;
+ }
+
+ /* selector de clase */
+ .soloYo{
+    text-align: right;
+}
+
+/* selector por id */
+#miParrafo{
+    margin-top: 80px;
+}
+
+.otroParrafo{
+    font-size: 25px;
+}
+
+.miColor{
+    color: red;
+}
+
+ h1{
+    /* margen: es la separacion de los elementos html */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+
+    /* borde */
+    border-top: solid 5px black;
+    border-right: dashed 8px blue;
+    border-bottom: solid 5px black;
+    border-left: dotted 12px violet;
+
+    /* relleno: parte de adentro de la caja */
+    padding-top: 35px;
+    padding-left: 60px;
+    padding-bottom: 35px;
+    padding-right: 5px;
+ }
+
+.centrar{
+    text-align: center;
+}
+
+ /* ul{
+    text-align: center;
+ }*/
+
+ ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+    padding: 25px;
+    border: 1px solid black;
+    background: yellow;
+ }
+
+ a{
+    text-decoration: none;
+    background: red;
+    color: white;
+ }

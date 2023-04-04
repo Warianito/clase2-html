@@ -5,15 +5,24 @@
     <meta charset="UTF-8"><!-- Configuracion del lenguaje. Esta asignando el tipo de tipografia UTF-8 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Responsivo. trata que las antiguas paginas de internet explorer se adapten -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsivo. Trata de adaptar la pagina web al dispositivo -->
+    <link rel="stylesheet" href="./css/index.css">
     <title>Html</title><!-- Titulo de la ventana del navegador -->
+
+    <style>
+        p{
+            color: blue;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
 </head>
 <body><!-- cuerpo de la pagina web. Es lo que el cliente va a ver -->
     <header>
-        <h2> Soy el header de la pagina</h2>
+        <h2 class="centrar"> Soy el header de la pagina</h2>
     </header>
     <nav>
-        <h2> Soy la navegación</h2>
-        <ul><!-- listas desordenadas por default tiene puntos como viñeta -->
+        <h2 class="soloYo"> Soy la navegación</h2>
+        <ul class="centrar"><!-- listas desordenadas por default tiene puntos como viñeta -->
             <li><!-- elementos hijos de las listas ordenadas y desordenadas -->
                 <a href="./pages/sucursales.html">SUCURSALES</a><!-- a href indica donde llevar al usuario cuando el cliente hace click en esa linea -->
             </li>
@@ -23,19 +32,21 @@
         </ul>
     </nav>
     <main><!-- Dentro del main esta el contenido que yo quiero que el cliente vea -->
-        <h1> Soy el main - Titulo nivel 1</h1>
+        <h1 style="color: green; font-size: 60px"> Soy el main - Titulo nivel 1</h1>
 
         <hr> <!-- linea horizontal -->
         <section>
             <h3> Alimentación saludable</h3>
             <img src=".\alimento.jpg" alt="imagen de una alimentacion sana">
-            <article>
-                <p>
+            <article class="soloYo">
+                <p id="miParrafo">
                     Lorem ipsum dolor sit <strong> <i><a href="./pages/productos.html#miFormulario">Formulario</a></i> </strong>, amet consectetur adipisicing elit. Eaque quis deleniti voluptatum odio! Doloremque quam nobis quidem. Quasi minima sapiente ab possimus sit placeat ut, error officiis ipsum harum ea!
                 </p>
+
+        
             </article>
             <article>
-                <p>
+                <p class="centrar otroParrafo miColor">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quis deleniti voluptatum odio! Doloremque quam nobis quidem. Quasi minima sapiente ab possimus sit placeat ut, error officiis ipsum harum ea!
                 </p>
             </article>
@@ -52,7 +63,7 @@
             <h3> Alimentación chatarra</h3>
             <img src=".\alimentochatarra.jpg" alt="imagen de una alimentacion chatarra">
             <article>
-                <p>
+                <p class="miColor">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quis deleniti voluptatum odio! Doloremque quam nobis quidem. Quasi minima sapiente ab possimus sit placeat ut, error officiis ipsum harum ea!
                 </p>
             </article>
@@ -86,7 +97,10 @@
     </main>
 
     <footer>
-        <h2> Soy el pie de pagina</h2>
+        <h2 title="The title attribute">Soy el pie de pagina</h2>
+        <p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
+
+        
     </footer>
 </body>
 </html><!-- CIERRE DE ETIQUETA -->
