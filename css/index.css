@@ -3,7 +3,14 @@
     propiedad: valor;
  } */
 
+section{
+   padding: 50px 50px 50px 50px;
+}
 
+/* section article{
+   background-color: gray;
+   text-align: center;
+} */
 
  h2{ /* selector globar. Estoy apuntando a todos los h2*/
     color: red;
@@ -12,12 +19,14 @@
     text-align: center;
  }
 
- /* selector de clase */
+ /* selector de clase ".clase" */
+ /* El selector de clase se utiliza para dar estilo a cierta parte del codigo */
  .soloYo{
     text-align: right;
 }
 
 /* selector por id */
+/* El selector id se utiliza para nombrar porciones de codigo y sectores. Se utiliza cuando quieres aplicar el mismo estilo a mas de un elemento */
 #miParrafo{
     margin-top: 80px;
 }
@@ -32,29 +41,56 @@
 
  h1{
     /* margen: es la separacion de los elementos html */
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 1px;
+    margin-left: 1px;
 
 
     /* borde */
     border-top: solid 5px black;
-    border-right: dashed 8px blue;
+    border-right: solid 5px black;
+    /* border-right: dashed 8px blue; */
     border-bottom: solid 5px black;
-    border-left: dotted 12px violet;
+    border-left: solid 5px black;
+    /* border-left: dotted 12px violet; */
 
     /* relleno: parte de adentro de la caja */
     padding-top: 35px;
     padding-left: 60px;
     padding-bottom: 35px;
     padding-right: 5px;
+
+    background-color: red;
  }
 
 .centrar{
     text-align: center;
 }
 
+.derecha{
+   text-align: right;
+}
+
+.navegador{
+   /* margen: es la separacion de los elementos html */
+   margin-top: 5px;
+   margin-bottom: 5px;
+   margin-right: 1px;
+   margin-left: 1px;
+
+
+   /* borde */
+   border-top: solid 5px black;
+   border-right: solid 5px black;
+   /* border-right: dashed 8px blue; */
+   border-bottom: solid 5px black;
+   border-left: solid 5px black;
+   /* border-left: dotted 12px violet; */
+
+   background-color: rgb(226, 186, 186);
+
+}
  /* ul{
     text-align: center;
  }*/
@@ -64,12 +100,16 @@
     display: inline-block;
     margin: 15px;
     padding: 25px;
-    border: 1px solid black;
-    background: yellow;
+    /* border: 1px solid black; */
+    /* background: yellow; */
  }
 
  a{
     text-decoration: none;
-    background: red;
-    color: white;
+/*     background: red;*/   
+    color: black;
+ }
+
+ .bordesImagen{
+   border-color: brown;
  }

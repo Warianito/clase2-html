@@ -5,24 +5,28 @@
     <meta charset="UTF-8"><!-- Configuracion del lenguaje. Esta asignando el tipo de tipografia UTF-8 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Responsivo. trata que las antiguas paginas de internet explorer se adapten -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsivo. Trata de adaptar la pagina web al dispositivo -->
+    <!-- linea para insertar css en html -->
     <link rel="stylesheet" href="./css/index.css">
+
     <title>Html</title><!-- Titulo de la ventana del navegador -->
 
+<!-- Forma interna recomendable de insertar css en html -->    
     <style>
         p{
             color: blue;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-
     </style>
 </head>
 <body><!-- cuerpo de la pagina web. Es lo que el cliente va a ver -->
     <header>
-        <h2 class="centrar"> Soy el header de la pagina</h2>
+<!-- En html para aplicar la clase que definimos en css debemos colocar en el valor el nombre de la clase que definimos en css -->        
+        <h1 class="centrar"> ALIMENTACIÓN SALUDABLE</h1>
+        <h6 class="derecha"> Soy el header de la página</h6>
     </header>
     <nav>
-        <h2 class="soloYo"> Soy la navegación</h2>
-        <ul class="centrar"><!-- listas desordenadas por default tiene puntos como viñeta -->
+        <!-- <h2 class="soloYo"> Soy la navegación</h2> -->
+        <ul class="centrar navegador"><!-- listas desordenadas por default tiene puntos como viñeta -->
             <li><!-- elementos hijos de las listas ordenadas y desordenadas -->
                 <a href="./pages/sucursales.html">SUCURSALES</a><!-- a href indica donde llevar al usuario cuando el cliente hace click en esa linea -->
             </li>
@@ -30,9 +34,10 @@
                 <a href="./pages/productos.html">PRODUCTOS</a>
             </li>
         </ul>
+        <h6 class="derecha"> Soy el navegador de la página</h6>
     </nav>
     <main><!-- Dentro del main esta el contenido que yo quiero que el cliente vea -->
-        <h1 style="color: green; font-size: 60px"> Soy el main - Titulo nivel 1</h1>
+        <!-- <h1 style="color: green; font-size: 60px"> Soy el main - Titulo nivel 1</h1> -->
 
         <hr> <!-- linea horizontal -->
         <section>
@@ -61,7 +66,7 @@
 
         <section>
             <h3> Alimentación chatarra</h3>
-            <img src=".\alimentochatarra.jpg" alt="imagen de una alimentacion chatarra">
+            <img src=".\alimentochatarra.jpg" alt="imagen de una alimentacion chatarra" class="bordesImagen">
             <article>
                 <p class="miColor">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quis deleniti voluptatum odio! Doloremque quam nobis quidem. Quasi minima sapiente ab possimus sit placeat ut, error officiis ipsum harum ea!
